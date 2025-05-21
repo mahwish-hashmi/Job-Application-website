@@ -2,113 +2,89 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ccc;
 }
-
 .container {
-  max-width: 960px;
-  padding: 40px 20px;
-  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .apply_box {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-h1 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
 }
 
 .title_small {
-  font-size: 18px;
-  font-weight: 500;
-  color: #888;
+  font-size: 20px;
 }
 
 .form_container {
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-
 .form_control {
   display: flex;
   flex-direction: column;
 }
 
 label {
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #333;
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 input,
 select,
 textarea {
-  padding: 10px 12px;
+  padding: 6px 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 15px;
-  background-color: #f9f9f9;
-  transition: border 0.2s ease;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: #007bff;
-  background-color: #fff;
-}
-
-.textarea_control {
-  grid-column: 1 / span 2;
-}
-
-.textarea_control textarea {
-  width: 100%;
-  resize: none;
+input:focus {
+  outline-color: red;
 }
 
 .button_container {
-  margin-top: 30px;
   display: flex;
+
   justify-content: flex-end;
+  margin-top: 20px;
 }
-
 button {
-  background-color: #007bff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
+  background-color: red;
+  border: transparent solid 2px;
+  padding: 5px 10px;
   color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
 }
-
 button:hover {
-  background-color: #0056b3;
-  transform: scale(1.03);
+  background-color: #ccc;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.textarea_control {
+  grid-column: 1 / span 2;
+}
+.textarea_control textarea {
+  width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 460px) {
   .textarea_control {
     grid-column: 1 / span 1;
   }
-}
+} ;
